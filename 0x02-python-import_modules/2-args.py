@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 if __name__ == '__main__':
     import sys
 
@@ -12,5 +13,5 @@ if __name__ == '__main__':
         print("{} arguments:".format(argvlength))
         number = 1
         for argument in range(argvlength):
-            print("{}: {}".format(number, argument))
+            print("{}: {}".format(number, sys.argv[argument + 1]))
             number += 1
