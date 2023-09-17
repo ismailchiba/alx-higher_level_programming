@@ -2,8 +2,7 @@
 if __name__ == '__main__':
     import sys
 
-    sys.argv.pop(0)
-    argvlength = len(sys.argv)
+    argvlength = len(sys.argv) - 1
 
     if (argvlength == 0):
         print("0 arguments.")
