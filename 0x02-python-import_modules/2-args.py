@@ -8,10 +8,9 @@ if __name__ == '__main__':
         print("0 arguments.")
     elif (argvlength == 1):
         print("1 argument:")
-        print("{:d}: {}".format(len(sys.argv), sys.argv[0]))
     else:
-        print("{:d} arguments:".format(argvlength))
+        print("{} arguments:".format(argvlength))
         number = 1
-        for argument in sys.argv:
-            print("{:d}: {}".format(number, argument))
+        for argument in range(argvlength):
+            print("{}: {}".format(number, argument))
             number += 1
