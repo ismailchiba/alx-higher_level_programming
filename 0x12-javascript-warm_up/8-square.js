@@ -9,4 +9,4 @@ function Square (num, txt) {
   }
 }
 
-Square(Number.parseInt(process.argv[2]), '#');
+Square(Number.parseInt(process.argv[2]), 'X');
