@@ -10,7 +10,7 @@ if __name__ == "__main__":
                          db=sys.argv[3], port=3306)
     cur = db.cursor()
     state_name = sys.argv[4]
-    sql = "SELECT * FROM states WHERE name = '{}'\
+    sql = "SELECT * FROM states WHERE name LIKE BINARY '{}'\
           ORDER BY id ASC;"
     cur.execute(sql.format(state_name))
     row = cur.fetchone()
