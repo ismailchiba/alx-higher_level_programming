@@ -13,7 +13,8 @@ if __name__ == "__main__":
     sql = "SELECT * FROM states WHERE name LIKE BINARY '{}'\
           ORDER BY id ASC;"
     cur.execute(sql.format(state_name))
-    row = cur.fetchone()
-    print(row)
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
     cur.close()
     db.close()
