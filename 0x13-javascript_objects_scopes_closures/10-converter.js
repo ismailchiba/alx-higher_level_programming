@@ -5,8 +5,7 @@
  * @returns {Function} A conversion function.
  */
 exports.converter = function (base) {
-    return function (num) {
-      return num.toString(base);
-    };
+  return function (num) {
+    return num.toString(base);
   };
-  
+  };
