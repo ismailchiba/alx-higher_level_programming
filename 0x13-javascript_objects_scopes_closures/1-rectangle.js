@@ -2,9 +2,8 @@
 /**
  * Class Rectangle : parallelogram with 4 angles.
  */
-
 class Rectangle {
-    constructor(w,h){
+    constructor(w, h){
         /**
          * Create a Rectangle with known width and height.
          * @param {number} w the value of the width.
