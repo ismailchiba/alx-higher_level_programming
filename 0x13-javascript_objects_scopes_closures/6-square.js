@@ -11,9 +11,6 @@ class Square extends SquareParent {
  * Creates a new Square with the given dimensions.
  * @param {Number} size The value of the width and height.
  */
-  constructor (size) {
-    super(size);
-  }
 
   charPrint (c) {
     if (c === undefined) {
