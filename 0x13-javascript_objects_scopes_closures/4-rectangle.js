@@ -19,10 +19,10 @@ class Rectangle {
   print () {
     // Loop through each row
     for (let i = 0; i < this.height; i++) {
-      // Create a row of 'width' number of '#'
+      // Create a row of 'width' number of 'X'
       let row = '';
       for (let j = 0; j < this.width; j++) {
-        row += '#';
+        row += 'X';
       }
       console.log(row);
     }
