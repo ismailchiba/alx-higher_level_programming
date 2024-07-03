@@ -16,7 +16,7 @@ class Square extends SquareParent {
   }
 
   charPrint (c) {
-    if (c == undefined) {
+    if (c === undefined) {
       // Call a method from the parent class
       super.print();
     } else {
