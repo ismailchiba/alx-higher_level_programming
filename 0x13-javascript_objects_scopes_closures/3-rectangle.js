@@ -22,7 +22,7 @@ class Rectangle {
       // Create a row of 'width' number of '#'
       let row = '';
       for (let j = 0; j < this.width; j++) {
-        row += '#';
+        row += 'X';
       }
       console.log(row);
     }
