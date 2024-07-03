@@ -1,4 +1,4 @@
-#!/user/bin/node
+#!/usr/bin/node
 /**
  * Class Rectangle : parallelogram with 4 angles.
  */

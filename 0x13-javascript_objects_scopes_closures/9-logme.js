@@ -1,4 +1,4 @@
-#!/user/bin/node
+#!/usr/bin/node
 let num = 0;
 /**
  * Print {num} the number of arguments already printed

@@ -1,4 +1,4 @@
-#!/user/bin/node
+#!/usr/bin/node
 
 const SquareParent = require('./5-square');
 

@@ -1,4 +1,4 @@
-#!/user/bin/node
+#!/usr/bin/node
 /**
  * Reverses an array.
  * @param {Array} list the array to a reverse
