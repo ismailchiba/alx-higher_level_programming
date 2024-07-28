@@ -4,6 +4,7 @@
 using 0-rectangle.py
 """
 
+
 class Rectangle:
     """
     Represent a Rectangle, with a width and height
@@ -12,12 +13,12 @@ class Rectangle:
         """Initializes the data."""
         self.__width = width
         self.__height = height
-    
+
     @property
     def width(self):
         """width getter"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """width setter"""
@@ -31,7 +32,7 @@ class Rectangle:
     def height(self):
         """height getter"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """height setter"""
