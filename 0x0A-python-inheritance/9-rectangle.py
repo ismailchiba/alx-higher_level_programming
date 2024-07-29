@@ -24,4 +24,4 @@ class Rectangle(BaseGeometry):
         string += str(self.__width) + "/" + str(self.__height)
         return string
         """
-        return f"[Rectangle] {self.__width}/{self.__height}"
+        return f"[{self.__class__.__name__}] {self.__width}/{self.__height}"
