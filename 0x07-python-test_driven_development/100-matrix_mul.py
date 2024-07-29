@@ -8,9 +8,9 @@ def matrix_mul(m_a, m_b):
         m_a (list of lists): first matrix
         m_b (list of lists): second matrix
     """
-    if type(m_a) != list:
+    if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
-    if type(m_b) != list:
+    if not isinstance(m_b, list):
         raise TypeError("m_b must be a list")
 
     # variables to verify if both m_a and m_b can be multiplied
@@ -21,7 +21,7 @@ def matrix_mul(m_a, m_b):
     if m_a == []:
         raise ValueError("m_a can't be empty")
     for row1 in m_a:
-        if type(row1) != list:
+        if not isinstance(row1, list):
             raise TypeError("m_a must be a list of lists")
         len1 = len(m_a[0])
         if row1 == []:
@@ -30,14 +30,14 @@ def matrix_mul(m_a, m_b):
             raise TypeError("each row of m_a must be of the same size")
         num_colum1 = len(row1)
         for column1 in row1:
-            if type(column1) != int and type(column1) != float:
+            if not isinstance(column1, int) and not isinstance(column1, float):
                 raise TypeError("m_a should contain only integers or floats")
 
     # Check requirements for matrix m_b
     if m_b == []:
         raise ValueError("m_b can't be empty")
     for row2 in m_b:
-        if type(row2) != list:
+        if not isinstance(row2, list):
             raise TypeError("m_b must be a list of lists")
         len2 = len(m_b[0])
         if row2 == []:
@@ -46,7 +46,7 @@ def matrix_mul(m_a, m_b):
             raise TypeError("each row of m_b must be of the same size")
         num_row2 += 1
         for column2 in row2:
-            if type(column2) != int and type(column2) != float:
+            if not isinstance(column2, int) and not isinstance(column2, float):
                 raise TypeError("m_b should contain only integers or floats")
 
     # Check if the multiplication is posible
